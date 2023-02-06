@@ -5,9 +5,11 @@ import Container from "../layout/Container";
 import LinkButton from "../layout/LinkButton";
 import styles from "./Projects.module.css";
 import ProjectCard from "../Project/ProjectCard";
+import Loading from "../layout/Loading";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
+  const [removeLoading, setRemoveLoading] = useState(false)
 
   const location = useLocation();
   let message = "";
@@ -26,6 +28,7 @@ export default function Projects() {
       .then((data) => {
         console.log(data);
         setProjects(data);
+        setRemoveLoading(true);
       })
       .catch((err) => console.log(err));
   }, []);
@@ -47,6 +50,7 @@ export default function Projects() {
               category={project.category.name}
             />
           ))}
+          {!removeLoading && <Loading />}
       </Container>
     </div>
   );
