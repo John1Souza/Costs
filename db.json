@@ -1,28 +1,6 @@
 {
   "projects": [
     {
-      "category": {
-        "id": "2",
-        "name": "Development"
-      },
-      "name": "Santos",
-      "budget": "5000",
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "name": "São Caetano",
-      "budget": "15000",
-      "category": {
-        "id": "4",
-        "name": "Planning"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
       "name": "Carapicuiba",
       "budget": "1500",
       "category": {
@@ -67,11 +45,11 @@
       "id": 6
     },
     {
-      "name": "Rello",
-      "budget": "4530",
+      "name": "R",
+      "budget": "1",
       "category": {
-        "id": "2",
-        "name": "Development"
+        "id": "4",
+        "name": "Planning"
       },
       "cost": 0,
       "services": [],

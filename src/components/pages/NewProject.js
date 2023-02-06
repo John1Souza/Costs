@@ -22,7 +22,6 @@ export default function NewProject() {
       ((resp) => resp.json())
     ).then(
       (data) => {
-      console.log(data)
       // Redirect
       navigate('/projects', { message: 'Projeto criado com sucesso!' })
     })
