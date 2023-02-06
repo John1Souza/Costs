@@ -9,7 +9,7 @@ import Loading from "../layout/Loading";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
-  const [removeLoading, setRemoveLoading] = useState(false)
+  const [removeLoading, setRemoveLoading] = useState(false);
 
   const location = useLocation();
   let message = "";
@@ -18,19 +18,21 @@ export default function Projects() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:5000/projects", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((resp) => resp.json())
-      .then((data) => {
-        console.log(data);
-        setProjects(data);
-        setRemoveLoading(true);
+    setTimeout(() => {
+      fetch("http://localhost:5000/projects", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
       })
-      .catch((err) => console.log(err));
+        .then((resp) => resp.json())
+        .then((data) => {
+          console.log(data);
+          setProjects(data);
+          setRemoveLoading(true);
+        })
+        .catch((err) => console.log(err));
+    }, 3000);
   }, []);
 
   return (
@@ -50,7 +52,7 @@ export default function Projects() {
               category={project.category.name}
             />
           ))}
-          {!removeLoading && <Loading />}
+        {!removeLoading && <Loading />}
       </Container>
     </div>
   );
