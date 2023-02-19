@@ -11,7 +11,7 @@ Foi utilizado o Hookie react-router-dom para as rotas entre os componentes do pr
 
 ![image](https://user-images.githubusercontent.com/109979241/219960497-d76340c0-4401-4ecc-9416-b1eb8e461335.png)
 
-## nesta seção é possível colocar o nome do projeto, valor e tipo
+## nesta seção é possível colocar o nome do projeto, valor e tipo, conforme as categorias disponíveis.
 
 ![image](https://user-images.githubusercontent.com/109979241/219960555-5082a6b6-d2f4-4217-b6ba-9ea4dc4722a6.png)
 
