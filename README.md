@@ -26,7 +26,7 @@ Foi utilizado o react-router-dom para as rotas entre os componentes do projeto, 
 ### Neste projeto utitizei:
 
 - ReactJS
-- Conhecimentos em CSS para estilização
+- CSS para estilização
 - React-router-dom para as rotas entre as páginas
 
 
